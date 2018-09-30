@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'CircularStd-Book';
+  src: url('assets/fonts/circularstd-book.woff2') format('woff2'),
+  url('assets/fonts/circularstd-book.ttf') format('truetype'),
+  url('assets/fonts/circularstd-book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('assets/fonts/tiempos-headline/TiemposHeadline-Bold.ttf') format('truetype'),
+  url('assets/fonts/tiempos-headline/TiemposHeadline-Bold.woff') format('woff'),
+  url('assets/fonts/tiempos-headline/TiemposHeadline-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('assets/fonts/tiempos-text/TiemposText-Regular.ttf') format('truetype'),
+  url('assets/fonts/tiempos-text/TiemposText-Regular.woff') format('woff'),
+  url('assets/fonts/tiempos-text/TiemposText-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+.mpl-bold {
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 900;
+}
+
+body,
+p,
+div,
+span,
+font,
+.help,
+.input,
+.select,
+button,
+.button,
+option,
+select,
+.textarea {
+  font-family: "CircularStd-Book", sans-serif;
+  font-size: 16px;
+}
