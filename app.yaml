@@ -1,0 +1,23 @@
+runtime: python27
+threadsafe: yes
+service: default
+instance_class: F1
+automatic_scaling:
+  target_cpu_utilization: 0.85
+  min_instances: 0
+  max_instances: 2
+
+handlers:
+
+- url: /(.*\.(gif|png|jpg|css|js|woff|woff2|ttf|svg)(|\.map))$
+  static_files: dist/\1
+  upload: dist/(.*)(|\.map)
+  secure: always
+
+- url: /(.*)
+  static_files: dist/index.html
+  upload: dist/index.html
+  secure: always
+
+skip_files:
+- ^(?!dist)  # Skip any files not in the dist folder
